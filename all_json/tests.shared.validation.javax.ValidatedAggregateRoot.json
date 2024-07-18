@@ -1,0 +1,886 @@
+{
+  "@class" : "nitrox.dlc.mirror.model.AggregateRootModel",
+  "typeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+  "abstract" : false,
+  "allFields" : [ {
+    "@class" : "nitrox.dlc.mirror.model.ValueReferenceModel",
+    "name" : "id",
+    "type" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "tests.shared.validation.javax.ValidatedAggregateRootId",
+      "domainType" : "IDENTITY",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "accessLevel" : "PRIVATE",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "modifiable" : false,
+    "publicReadable" : true,
+    "publicWriteable" : false,
+    "static" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.FieldModel",
+    "name" : "text",
+    "type" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.String",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "isNotEmpty",
+        "param1" : null,
+        "param2" : null,
+        "message" : "{javax.validation.constraints.NotEmpty.message}"
+      }, {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "hasLength",
+        "param1" : "0",
+        "param2" : "100",
+        "message" : "{javax.validation.constraints.Size.message}"
+      } ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "accessLevel" : "PRIVATE",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "modifiable" : true,
+    "publicReadable" : true,
+    "publicWriteable" : false,
+    "static" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.FieldModel",
+    "name" : "optionalText",
+    "type" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.String",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "hasLength",
+        "param1" : "0",
+        "param2" : "10",
+        "message" : "{javax.validation.constraints.Size.message}"
+      } ],
+      "hasOptionalContainer" : true,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : "java.util.Optional",
+      "containerAssertions" : [ ]
+    },
+    "accessLevel" : "PRIVATE",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "modifiable" : true,
+    "publicReadable" : true,
+    "publicWriteable" : false,
+    "static" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.FieldModel",
+    "name" : "concurrencyVersion",
+    "type" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "long",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "accessLevel" : "PACKAGE",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "modifiable" : true,
+    "publicReadable" : true,
+    "publicWriteable" : false,
+    "static" : false
+  } ],
+  "methods" : [ {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "builder",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "tests.shared.validation.javax.ValidatedAggregateRoot$ValidatedAggregateRootBuilder",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "validate",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "getId",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "tests.shared.validation.javax.ValidatedAggregateRootId",
+      "domainType" : "IDENTITY",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : true,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "getText",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.String",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "isNotEmpty",
+        "param1" : null,
+        "param2" : null,
+        "message" : "{javax.validation.constraints.NotEmpty.message}"
+      }, {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "hasLength",
+        "param1" : "0",
+        "param2" : "100",
+        "message" : "{javax.validation.constraints.Size.message}"
+      } ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : true,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "setText",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.String",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : true
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "komischeBerechnungMitValidationError",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "optionalTextSetzenMitReturn",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.String",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ {
+          "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+          "assertionType" : "isNotBlank",
+          "param1" : null,
+          "param2" : null,
+          "message" : "{javax.validation.constraints.NotBlank.message}"
+        } ],
+        "hasOptionalContainer" : true,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : "java.util.Optional",
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+      "domainType" : "AGGREGATE_ROOT",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "setOptionalText",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.String",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : true
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "textSetzenMitReturn",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.String",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+      "domainType" : "AGGREGATE_ROOT",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "textSetzenPrecondition",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.String",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ {
+          "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+          "assertionType" : "isNotBlank",
+          "param1" : null,
+          "param2" : null,
+          "message" : "{javax.validation.constraints.NotBlank.message}"
+        } ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "textSetzenReturnVal",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.String",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.String",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "isNotBlank",
+        "param1" : null,
+        "param2" : null,
+        "message" : "{javax.validation.constraints.NotBlank.message}"
+      } ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "getOptionalText",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.String",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ {
+        "@class" : "nitrox.dlc.mirror.model.AssertionModel",
+        "assertionType" : "hasLength",
+        "param1" : "0",
+        "param2" : "10",
+        "message" : "{javax.validation.constraints.Size.message}"
+      } ],
+      "hasOptionalContainer" : true,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : "java.util.Optional",
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : true,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "equals",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "java.lang.Object",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "boolean",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "toString",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.String",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "hashCode",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "int",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "id",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "nitrox.dlc.domain.types.Identity",
+      "domainType" : "IDENTITY",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "concurrencyVersion",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "long",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : true,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "wait",
+    "declaredByTypeName" : "java.lang.Object",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "long",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    }, {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg1",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "int",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "wait",
+    "declaredByTypeName" : "java.lang.Object",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "wait",
+    "declaredByTypeName" : "java.lang.Object",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ {
+      "@class" : "nitrox.dlc.mirror.model.ParamModel",
+      "name" : "arg0",
+      "type" : {
+        "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+        "typeName" : "long",
+        "domainType" : "NON_DOMAIN",
+        "assertions" : [ ],
+        "hasOptionalContainer" : false,
+        "hasCollectionContainer" : false,
+        "hasListContainer" : false,
+        "hasSetContainer" : false,
+        "hasStreamContainer" : false,
+        "containerTypeName" : null,
+        "containerAssertions" : [ ]
+      }
+    } ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "getClass",
+    "declaredByTypeName" : "java.lang.Object",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "java.lang.Class",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "notify",
+    "declaredByTypeName" : "java.lang.Object",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  }, {
+    "@class" : "nitrox.dlc.mirror.model.MethodModel",
+    "name" : "notifyAll",
+    "declaredByTypeName" : "java.lang.Object",
+    "accessLevel" : "PUBLIC",
+    "parameters" : [ ],
+    "returnType" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "void",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "publishedEventTypeNames" : [ ],
+    "listenedEventTypeName" : null,
+    "getter" : false,
+    "setter" : false
+  } ],
+  "identityField" : {
+    "@class" : "nitrox.dlc.mirror.model.ValueReferenceModel",
+    "name" : "id",
+    "type" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "tests.shared.validation.javax.ValidatedAggregateRootId",
+      "domainType" : "IDENTITY",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "accessLevel" : "PRIVATE",
+    "declaredByTypeName" : "tests.shared.validation.javax.ValidatedAggregateRoot",
+    "modifiable" : false,
+    "publicReadable" : true,
+    "publicWriteable" : false,
+    "static" : false
+  },
+  "concurrencyVersionField" : {
+    "@class" : "nitrox.dlc.mirror.model.FieldModel",
+    "name" : "concurrencyVersion",
+    "type" : {
+      "@class" : "nitrox.dlc.mirror.model.AssertedContainableTypeModel",
+      "typeName" : "long",
+      "domainType" : "NON_DOMAIN",
+      "assertions" : [ ],
+      "hasOptionalContainer" : false,
+      "hasCollectionContainer" : false,
+      "hasListContainer" : false,
+      "hasSetContainer" : false,
+      "hasStreamContainer" : false,
+      "containerTypeName" : null,
+      "containerAssertions" : [ ]
+    },
+    "accessLevel" : "PACKAGE",
+    "declaredByTypeName" : "nitrox.dlc.domain.types.base.EntityBase",
+    "modifiable" : true,
+    "publicReadable" : true,
+    "publicWriteable" : false,
+    "static" : false
+  },
+  "inheritanceHierarchyTypeNames" : [ "nitrox.dlc.domain.types.base.AggregateRootBase", "nitrox.dlc.domain.types.base.EntityBase", "java.lang.Object" ],
+  "allInterfaceTypeNames" : [ ]
+}
