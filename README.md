@@ -1,26 +1,49 @@
 # DomainlifecyclesCodeGenerator
+The Domainlifecycles Code Generator (DCG) is the first version of a Generative AI Assistance System which was developed for esentri's Domain Lifecycles Framework for the Domain-Driven Design (DDD) Development process.
 
-<!-- The DCG Demo App is an application which is a frontend and server for the showcasing of the Domainlifecycles Code Generator (DCG) model which was developed as part of my master thesis at esentri. 
-This repository is a decoupling from the main repository [DomainlifecyclesCodeGenerator](https://github.com/Tr33Bug/DomainlifecyclesCodeGenerator) in which the entire development of the model is documented.  -->
+This first version of the DCG is able to create syntactically correct Domainlifecycles JSON objects as part of the Domainlifecycles DSL. More information about the DCG and its creation as well as limitations and future work can be found in my master thesis. 
+
+The DCG was developed in collaboration with [esentri](https://esentri.com/) as part of my Master's thesis at the [Karlsruhe University of Applied Sciences](https://www.h-ka.de/). 
+
+This repository contains the project files, models and logs for the DCG.
+
+Outsourced from this repository is the [DCG-DemoApp](https://github.com/Tr33Bug/DCG-DemoApp) which was developed for the presentation and showcase of the possibilities of this first model. 
+
 
 ## Overview
-<!-- This repository contains a basic PyQT app with a flask server to run the fine-tuned DCG model, showcasing the code generation.
 
 ```bash
-DCG-DemoApp
-├──images
-│   ├── DCGAppUIUsage.png
-│   └── e-mit-stern-grün.svg
-├──models
+DomainlifecyclesCodeGenerator
+├── all_json
+│   ├── nitrox.dlc.domain.types.base.AggregateRootBase.json
+│   ...
+│   └── tests.shared.validation.javax.ValidatedValueObject.json
+├── datasets
+├── models
 │   └──finalTraining_v1
 │   │   ├── adapter_config.json
 │   │   ├── adapter_model.safetensors
 │   │   ├── generation_config.json
 │   │   └── training_args.bin
+├── runs
+│   └──May22_23-13-35_deep-learning_FinalTraining_v1
+│   │   └── events.out.tfevents.1716412415.deep-learning.1381720.0
 ├── DCG_Client.py
 ├── DCG_Server.py
 └── README.md
-``` -->
+```
+
+### Folder Structure
+- **all_json:** 
+    - Folder containing the raw JSON files for fine-tuning the DCG. 
+    - The customer-related project data from the "esentri-Partner" was removed from the data set. That was 80% of the files and so the data set is only stored here as an example.
+- **datasets:**
+    - Empty folder reserved for export and storage of the generated and cleaned dataset.
+- **models:**
+    - Reserved path for the model export with the `finalTraining_v1` model as the result of the final training for the DCG. 
+- **runs:**
+    - Reserved tensorboard callback folder for the training history logs. The results from the final training of the DCG are stored here. 
+    - The metrics and progressions logged there can be displayed and analyzed with a tensorboard.
 
 ## Installation and Setup
 
@@ -31,8 +54,8 @@ DCG-DemoApp
 This project is not being actively developed further, for questions or suggestions please open an issue.
 
 ## Acknowledgements
-- **Filip Stepniak** ([ksbstepfil](https://github.com/ksbstepfil)) - Supervisor from [esentri](https://esentri.com/)
-- **Mario Herb** - Supervisor from [esentri](https://esentri.com/)
+- **Filip Stepniak** ([feelsteps](https://github.com/feelsteps)) - Supervisor from [esentri](https://esentri.com/)
+- **Mario Herb** ([chuckson](https://github.com/chuckson))- Supervisor from [esentri](https://esentri.com/)
 - **Prof. Patrick Baier** ([pabair](https://github.com/pabair)) - Supervising professor from [Hochschule Karlsruhe - University of Applied Sciences](https://www.h-ka.de/)
 
 ## License
