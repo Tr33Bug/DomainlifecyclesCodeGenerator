@@ -1,7 +1,7 @@
 # DomainlifecyclesCodeGenerator
 The Domainlifecycles Code Generator (DCG) is the first version of a Generative AI Assistance System which was developed for esentri's Domain Lifecycles Framework for the Domain-Driven Design (DDD) Development process.
 
-This first version of the DCG is able to create syntactically correct Domainlifecycles JSON objects as part of the Domainlifecycles DSL. More information about the DCG and its creation as well as limitations and future work can be found in my master thesis. 
+This first version of the DCG is able to create syntactically correct Domainlifecycles JSON objects as part of the Domainlifecycles DSL. More information about the DCG and its creation as well as limitations and future work can be found in the [Master Thesis PDF](Master-Thesis_Götz-Henrik_Wiegand_2024.pdf). 
 
 The DCG was developed in collaboration with [esentri](https://esentri.com/) as part of my Master's thesis at the [Karlsruhe University of Applied Sciences](https://www.h-ka.de/). 
 
@@ -48,7 +48,6 @@ DomainlifecyclesCodeGenerator
 ## Installation and Setup
 
 
-## Usage
 
 ## Contributing
 This project is not being actively developed further, for questions or suggestions please open an issue.
