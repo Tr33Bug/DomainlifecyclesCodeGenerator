@@ -21,17 +21,19 @@ DomainlifecyclesCodeGenerator
 │   ...
 │   └── tests.shared.validation.javax.ValidatedValueObject.json
 ├── datasets
+├── images
+│   └── ColoredDataPreprocessingProcess.jpg
 ├── models
-│   └──finalTraining_v1
+│   └── finalTraining_v1
 │   │   ├── adapter_config.json
 │   │   ├── adapter_model.safetensors
 │   │   ├── generation_config.json
 │   │   └── training_args.bin
 ├── runs
-│   └──May22_23-13-35_deep-learning_FinalTraining_v1
+│   └── May22_23-13-35_deep-learning_FinalTraining_v1
 │   │   └── events.out.tfevents.1716412415.deep-learning.1381720.0
 ├── .gitignore
-├── DCG_Client.py
+├── 0_1_datasetGenerator.ipynb
 ├── DCG_Server.py
 └── README.md
 ```
@@ -42,6 +44,8 @@ DomainlifecyclesCodeGenerator
     - The customer-related project data from the "esentri-Partner" was removed from the data set. That was 80% of the files and so the data set is only stored here as an example.
 - **datasets:**
     - Empty folder reserved for export and storage of the generated and cleaned dataset.
+- **images:**
+    - Folder for diagrams and graphics for project documentation.
 - **models:**
     - Reserved path for the model export with the `finalTraining_v1` model as the result of the final training for the DCG. 
 - **runs:**
