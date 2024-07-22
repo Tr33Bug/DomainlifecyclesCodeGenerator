@@ -1,5 +1,5 @@
 # DomainlifecyclesCodeGenerator
-The Domainlifecycles Code Generator (DCG) is the first version of a Generative AI Assistance System which was developed for esentri's Domain Lifecycles Framework for the Domain-Driven Design (DDD) Development process.
+The *Domainlifecycles Code Generator (DCG)* formerly *NitroX Code Generator (NCG)* is the first version of a Generative AI Assistance System which was developed for esentri's Domain Lifecycles Framework for the Domain-Driven Design (DDD) Development process.
 
 This first version of the DCG is able to create syntactically correct Domainlifecycles JSON objects as part of the Domainlifecycles DSL. More information about the DCG and its creation as well as limitations and future work can be found in the [Master Thesis PDF](Master-Thesis_Götz-Henrik_Wiegand_2024.pdf). 
 
@@ -9,6 +9,8 @@ This repository contains the project files, models and logs for the DCG.
 
 Outsourced from this repository is the [DCG-DemoApp](https://github.com/Tr33Bug/DCG-DemoApp) which was developed for the presentation and showcase of the possibilities of this first model. 
 
+> [!IMPORTANT]  
+> At the time of the creation of the thesis and the project, the domain lifecycles framework still had the working title NitroX. In the following project, as well as in the entire master thesis, Domainlifecycles is always referred to as NitroX. 
 
 ## Overview
 
@@ -28,6 +30,7 @@ DomainlifecyclesCodeGenerator
 ├── runs
 │   └──May22_23-13-35_deep-learning_FinalTraining_v1
 │   │   └── events.out.tfevents.1716412415.deep-learning.1381720.0
+├── .gitignore
 ├── DCG_Client.py
 ├── DCG_Server.py
 └── README.md
