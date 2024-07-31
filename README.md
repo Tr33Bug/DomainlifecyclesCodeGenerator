@@ -53,6 +53,79 @@ DomainlifecyclesCodeGenerator
     - The metrics and progressions logged there can be displayed and analyzed with a tensorboard.
 
 ## Installation and Setup
+1. **Clone the Repository**  
+
+   Clone the repository:
+   ```bash
+   git clone git@github.com:Tr33Bug/DomainlifecyclesCodeGenerator.git
+   cd DomainlifecyclesCodeGenerator
+   ```
+
+2. **Install the Requirements**
+
+   Create a conda environment and install all the requirements from the `environment.yml`:
+   ```bash
+   # create environment
+   conda env create -f environment.yml
+
+   # activate environment
+   conda activate DCGServerEnv
+   ```
+3. **Run the Notebooks**
+    Start with [1_datasetGenerator.ipynb](1_datasetGenerator.ipynb) and follow the instructions from the jupyter notebook.
+
+### Remote Training
+> [!NOTE] The entire project was engineered remotely via VS Code SSH access. In order to be able to close the notebook during longer training times, the notebooks were exported as a Python script and executed remotely with a tmux session. 
+
+The setup and procedure is explained in this section using the example of the 1_datasetGenerator and the 2_trainingLoop notebook:
+
+1. Start ssh session
+2. Set `run_name` in 1_dataset_generator.py und 2_trainer.py to a desired name (musst be the same in both) 
+3. run bash commands:
+    ```bash
+    # start tmux session
+    tmux
+
+    python 1_dataset_generator.py > log.txt
+
+    python 2_trainer.py > log.txt
+    ```
+4. Ctrl+B, then D (to detach the tmux session)
+5. Open tensorboard with the ./runs folder
+
+-> Reconnect to detached Session:
+- `tmux ls`to list sessions:
+    ```bash
+    0: 1 windows (created Mon Mar 18 21:36:24 2024)
+    1: 1 windows (created Wed Apr  3 10:22:08 2024)
+    ```
+- Open Session with: `tmux attach-session -t NUMBER`
+
+
+### Optuna Dashboard Setup
+
+### Log in to Huggingface Hub
+1. Install Huggingface CLI with if not alredy installed: 
+    ```bash
+     # test if huggingface-cli ist installed and if already logged in. 
+     huggingface-cli whoami
+     # if you dont have huggingface-cli installed or if you are not logged in, follow the following steps:
+     
+     # install the huggingface-cli (should be already installed through the environment.yml or the transformers library)
+     pip install -U "huggingface_hub[cli]"
+
+     # login to Hugging Face using the cli
+     huggingface-cli login
+     # after this you should be promptet to past a Access Token. Generate the Access Token with the required rights through the Hugging Face website and your user account. 
+    ```
+    > [NOTE] 
+    > For more informations on the huggingface-cli see the Documentation: [Command Line Interface (CLI)](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
+
+2. Gain access to the model repository if required. To do this, log in to the Hugging Face Hub, go to the model repository and agree to the corresponding Terms of Services or similar. 
+
+> [NOTE] 
+> The base model used for this project can be found here: [codellama/CodeLlama-7b-hf](https://huggingface.co/codellama/CodeLlama-7b-hf)
+
 
 
 
