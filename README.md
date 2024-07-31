@@ -21,8 +21,6 @@ DomainlifecyclesCodeGenerator
 │   ...
 │   └── tests.shared.validation.javax.ValidatedValueObject.json
 ├── datasets
-├── images
-│   └── ColoredDataPreprocessingProcess.jpg
 ├── models
 │   └── finalTraining_v1
 │   │   ├── adapter_config.json
@@ -33,7 +31,8 @@ DomainlifecyclesCodeGenerator
 │   └── May22_23-13-35_deep-learning_FinalTraining_v1
 │   │   └── events.out.tfevents.1716412415.deep-learning.1381720.0
 ├── .gitignore
-├── 0_1_datasetGenerator.ipynb
+├── 1_datasetGenerator.ipynb
+├── ColoredDataPreprocessingProcess.jpg
 ├── DCG_Server.py
 └── README.md
 ```
