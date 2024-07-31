@@ -1,0 +1,170 @@
+ { "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}}], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}], "referencedRepositoryTypeNames": "VAR_referencedRepositoryTypeNames", "domainServiceInterfaceTypeNames": "VAR_domainServiceInterfaceTypeNames", "inheritanceHierarchyTypeNames": "VAR_inheritanceHierarchyTypeNames", "allInterfaceTypeNames": "VAR_allInterfaceTypeNames"}<END>
+   */
+  @Test
+  public void repository_mirror() {
+    Assertions.assertThatType(repositoryProvider.getRepositoryType(VAR_domainTypeIdentity)).isNotNull();
+    Assertions.assertThat(repositoryProvider.getRepositoryType(VAR_domainTypeIdentity)).matches(selfType -> {
+      Assertions.assertThat(selfType.getTypeName()).isEqualTo("VAR_typeName");
+      Assertions.assertThat(selfType.getAssertableType()).isEqualTo(AssertableType.NON_DOMAIN);
+      Assertions.assertThat(selfType.getAccessLevel()).isEqualTo(AccessLevel.PUBLIC);
+      Assertions.assertThat(selfType.getDeclaringTypeName()).isEqualTo("VAR_declaredByTypeName");
+      Assertions.assertThat(selfType.getMethodtions.assertThat(selfType.getMethodModelByName("VAR_name")).isNull();
+      Assertions.assertThat(selfType.getMethodModels()).hasSize(1);
+      Assertions.assertThat(selfType.getMethodModelBySignature("VAR_signature"))
+        .isEqualTo(new MethodModel(MethodSignature.builder()
+          .name("VAR_name")
+          .returnType(new AssertedContainableTypeModel("VAR_typeName", AssertableType.NON_DOMAIN, false, false, false, false, null))
+          .parameters(ParameModel("VAR_typeName", AssertableType.NON_DOMAIN, false, false, false, false, null))
+          .parameters(ParamModel.builder()
+            .paramName("VAR_paramName")
+            .paramType(new AssertedContainableTypeModel("VAR_typeName", AssertableType.NON_DOMAIN, false, false, false, false, null))
+            .build())
+          .build())
+        .hasField("VAR_fieldName")
+        .hasGetter("VAR_getterName", "VAR_declaredByTypeName", false, false)
+        .hasSetter("VAR_setterName", "VAR_declaredByTypeName", false, false)
+        .doesNotHaveEnumOptions()
+        .getEnumOptions()
+        .isEmptyStream()
+        .getInheritanceHierarchyTypeNames()
+        .contains("VAR_inheritanceHierarchyTypeNames")
+        .getAllInterfaceTypeNames()
+        .contains("VAR_allInterfaceTypeNames");
+      return true;
+    });
+  }
+
+  @Test
+  public void value_object_mirror() {
+    Assertions.assertThatType(repositoryProvider.getRepositoryType(VAR_domainTypeIdentity)).isNotNull();
+    Assertions.assertThat(repositoryProvider.getRepositoryType(VAR_domainTypeIdentity)).matches(selfType -> {
+      Assertions.assertThat(selfType.getTypeName()).isEqualTo("VAR_typeName");
+      Assertions.assertThat(selfType.getAssertableType()).isEqualTo(AssertableType.NON_DOMAIN);
+      Assertions.assertThat(selfType.getAccessLevel()).isEqualTo(AccessLevel.PUBLIC);
+      Assertions.assertThat(selfType.getDeclaringTypeName()).isEqualTo("VAR_declaredByTypeName");
+      Assertions.assertThat(selfType.getMethodModels())
+        .hasSize(3)
+        .extracting(MethodModel::getMethodName)
+        .contains("VAR_methodName")
+        .doesNotContain("VAR_nonExistentMethodName")
+        .doesNotHaveDuplicates()
+        .allMatch(s -> !s.isEmpty())
+        .asList()
+        .get(0)
+        .equals("VAR_methodName")
+        ? Assertions.assertThat(selfType.getMethodModelByName("VAR_methodName"))
+          .isNotNull()
+          .matches(methodModel -> {
+            Assertions.assertThat(methodModel.getMethodName()).isEqualTo("VAR_methodName");
+            Assertions.assertThat(methodModel.getDeclaringTypeName()).isEqualTo("VAR_declaredByTypeName");
+            Assertions.assertThat(methodModel.getAccessLevel()).isEqualTo(AccessLevel.PUBLIC);
+            Assertions.assertThat(methodModel.getParameters())
+              .hasSize(1)
+              .extracting(ParamModel::getParamName)
+              .contains("VAR_paramName")
+              .doesNotContain("VAR_nonExistentParamName")
+              .doesNotHaveDuplicates()
+              .allMatch(s -> !s.isEmpty())
+              .asList()
+              .get(0)
+              .equals("VAR_paramName")
+              ? Assertions.assertThat(methodModel.getParamModelByName("VAR_paramName"))
+                .isNotNull()
+                .matches(paramModel -> {
+                  Assertions.assertThat(paramModel.getParamName()).isEqualTo("VAR_paramName");
+                  Assertions.assertThat(paramModel.getParamType()).matches(paramType -> {
+                    Assertions.assertThat(paramType.getTypeName()).isEqualTo("VAR_typeName");
+                    Assertions.assertThat(paramType.getAssertableType()).isEqualTo(AssertableType.NON_DOMAIN);
+                    Assertions.assertThat(paramType.getHasOptionalContainer()).isFalse();
+                    Assertions.assertThat(paramType.getHasCollectionContainer").isFalse();
+                    Assertions.assertThat(paramType.getHasListContainer").isFalse();
+                    Assertions.assertThat(paramType.getHasSetContainer").isFalse();
+                    Assertions.assertThat(paramType.getHasStreamContainer").isFalse();
+                    Assertions.assertThat(paramType.getContainerTypeName").isNull();
+                    Assertions.assertThat(paramType.getContainerAssertions").isNull();
+                    return true;
+                  });
+                  Assertions.assertThat(methodModel.getReturnType()).isNull();
+                  Assertions.assertThat(methodModel.getPublishedEventTypeNames").isNull();
+                  Assertions.assertThat(methodModel.getListenedEventTypeName").isNull();
+                  Assertions.assertThat(methodModel.isGetter()).isFalse();
+                  Assertions.assertThat(methodModel.isSetter()).isFalse();
+                  return true;
+                })
+              : Assertions.assertThat(methodModel.getParamModels())
+                .hasSize(0)
+                .extracting(ParamModel::getParamName)
+                .contains("VAR_paramName")
+                .doesNotContain("VAR_nonExistentParamName")
+                .doesNotHaveDuplicates()
+                .allMatch(s -> !s.isEmpty())
+                .asList()
+                .get(0)
+                .equals("VAR_paramName")
+                ? Assertions.assertThat(methodModel.getParamModelByName("VAR_paramName"))
+                  .isNotNull()
+                  .matches(paramModel -> {
+                    Assertions.assertThat(paramModel.getParamName()).isEqualTo("VAR_paramName");
+                    Assertions.assertThat(paramModel.getParamType()).matches(paramType -> {
+                      Assertions.assertThat(paramType.getTypeName()).isEqualTo("VAR_typeName");
+                      Assertions.assertThat(paramType.getAssertableType()).isEqualTo(AssertableType.NON_DOMAIN);
+                      Assertions.assertThat(paramType.getHasOptionalContainer()).isFalse();
+                      Assertions.assertThat(paramType.getHasCollectionContainer").isFalse();
+                      Assertions.assertThat(paramType.getHasListContainer").isFalse();
+                      Assertions.assertThat(paramType.getHasSetContainer").isFalse();
+                      Assertions.assertThat(paramType.getHasStreamContainer").isFalse();
+                      Assertions.assertThat(paramType.getContainerTypeName").isNull();
+                      Assertions.assertThat(paramType.getContainerAssertions").isNull();
+                      return true;
+                    });
+                    Assertions.assertThat(methodModel.getReturnType()).isNull();
+                    Assertions.assertThat(methodModel.getPublishedEventTypeNames").isNull();
+                    Assertions.assertThat(methodModel.getListenedEventTypeName").isNull();
+                    Assertions.assertThat(methodModel.isGetter()).isFalse();
+                    Assertions.assertThat(methodModel.isSetter()).isFalse();
+                    return true;
+                  })
+                : Assertions.assertThat(methodModel.getParamModels())
+                  .hasSize(0)
+                  .extracting(ParamModel::getParamName)
+                  .contains("VAR_paramName")
+                  .doesNotContain("VAR_nonExistentParamName")
+                  .doesNotHaveDuplicates()
+                  .allMatch(s -> !s.isEmpty())
+                  .asList()
+                  .get(0)
+                  .equals("VAR_paramName")
+                  ? Assertions.assertThat(methodModel.getParamModelByName("VAR_paramName"))
+                    .isNotNull()
+                    .matches(paramModel -> {
+                      Assertions.assertThat(paramModel.getParamName()).isEqualTo("VAR_paramName");
+                      Assertions.assertThat(paramModel.getParamType()).matches(paramType -> {
+                        Assertions.assertThat(paramType.getTypeName()).isEqualTo("VAR_typeName");
+                        Assertions.assertThat(paramType.getAssertableType()).isEqualTo(AssertableType.NON_DOMAIN);
+                        Assertions.assertThat(paramType.getHasOptionalContainer()).isFalse();
+                        Assertions.assertThat(paramType.getHasCollectionContainer").isFalse();
+                        Assertions.assertThat(paramType.getHasListContainer").isFalse();
+                        Assertions.assertThat(paramType.getHasSetContainer").isFalse();
+                        Assertions.assertThat(paramType.getHasStreamContainer").isFalse();
+                        Assertions.assertThat(paramType.getContainerTypeName").isNull();
+                        Assertions.assertThat(paramType.getContainerAssertions").isNull();
+                        return true;
+                      });
+                      Assertions.assertThat(methodModel.getReturnType()).isNull();
+                      Assertions.assertThat(methodModel.getPublishedEventTypeNames").isNull();
+                      Assertions.assertThat(methodModel.getListenedEventTypeName").isNull();
+                      Assertions.assertThat(methodModel.isGetter()).isFalse();
+                      Assertions.assertThat(methodModel.isSetter()).isFalse();
+                      return true;
+                    })
+                  : Assertions.assertThat(methodModel.getParamModels())
+                    .hasSize(0)
+                    .extracting(ParamModel::getParamName)
+                    .contains("VAR_paramName")
+                    .doesNotContain("VAR_nonExistentParamName")
+                    .doesNotHaveDuplicates()
+                    .allMatch(s -> !s.isEmpty())
+                    .asList()
+                    .get(0)
+                    .equals("VAR_paramName")
+                    ? Assertions.assertThat(methodModel.getParamModelByName("

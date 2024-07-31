@@ -1,0 +1,152 @@
+ions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}], "identityField": {"@class": "nitrox.dlc.mirror.model.ValueReferenceModel", "name": "VAR_name", "type": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "IDENTITY", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "accessLevel": "PRIVATE", "declaredByTypeName": "VAR_declaredByTypeName", "modifiable": false, "publicReadable": true, "publicWriteable": false, "static": false}, "concurrencyVersionField": {"@class": "nitrox.dlc.mirror.model.FieldModel", "name": "VAR_name", "type": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "accessLevel": "PACKAGE", "declaredByTypeName": "VAR_declaredByTypeName", "modifiable": true, "publicReadable": true, "publicWriteable": false, "static": false}, "inheritanceHierarchyTypeNames": "VAR_inheritanceHierarchyTypeNames", "allInterfaceTypeNames": "VAR_allInterfaceTypeNames"}<END>
+   */
+  @Test
+  public void repository_mirror() {
+    /* preconditions */
+    
+    /* test */
+    var repositoryMirror = getRepositoryMirror(RepositoryWithAssertions.class);
+    
+    /* assertions */
+    assertValue("RepositoryWithAssertions", repositoryMirror.getTypeName());
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", repositoryMirror.getAssertedContainableType().getClass().getName());
+    assertValue("VAR_assertions", repositoryMirror.getAssertions());
+    assertValue("nitrox.dlc.mirror.model.AccessLevelEnum.PUBLIC", repositoryMirror.getAccessLevel());
+    assertValue("VAR_declaredByTypeName", repositoryMirror.getDeclaredByTypeName());
+    assertValue("nitrox.dlc.mirror.model.ValueReferenceModel", repositoryMirror.getIdentityField().getClass().getName());
+    assertValue("VAR_name", repositoryMirror.getIdentityField().getName());
+    assertValue("VAR_typeName", repositoryMirror.getIdentityField().getType().getTypeName());
+    assertValue("nitrox.dlc.mirror.model.AccessLevelEnum.PRIVATE", repositoryMirror.getIdentityField().getAccessLevel());
+    assertValue("VAR_declaredByTypeName", repositoryMirror.getIdentityField().getDeclaredByTypeName());
+    assertValue("false", repositoryMirror.getIdentityField().isModifiable());
+    assertValue("true", repositoryMirror.getIdentityField().isPublicReadable());
+    assertValue("false", repositoryMirror.getIdentityField().isPublicWriteable());
+    assertValue("false", repositoryMirror.getIdentityField().isStatic());
+    assertValue("nitrox.dlc.mirror.model.FieldModel", repositoryMirror.getConcurrencyVersionField().getClass().getName());
+    assertValue("VAR_name", repositoryMirror.getConcurrencyVersionField().getName());
+    assertValue("VAR_typeName", repositoryMirror.getConcurrencyVersionField().getType().getTypeName());
+    assertValue("nitrox.dlc.mirror.model.AccessLevelEnum.PACKAGE", repositoryMirror.getConcurrencyVersionField().getAccessLevel());
+    assertValue("VAR_declaredByTypeName", repositoryMirror.getConcurrencyVersionField().getDeclaredByTypeName());
+    assertValue("true", repositoryMirror.getConcurrencyVersionField().isModifiable());
+    assertValue("true", repositoryMirror.getConcurrencyVersionField().isPublicReadable());
+    assertValue("false", repositoryMirror.getConcurrencyVersionField().isPublicWriteable());
+    assertValue("false", repositoryMirror.getConcurrencyVersionField().isStatic());
+    assertValue("[EntityWithAssertions, ValueObjectWithAssertions, DomainServiceWithAssertions, RepositoryWithAssertions]", repositoryMirror.getInheritanceHierarchyTypeNames());
+    assertValue("[EntityWithAssertions, ValueObjectWithAssertions, DomainServiceWithAssertions, RepositoryWithAssertions]", repositoryMirror.getAllInterfaceTypeNames());
+  }
+  
+  @Test
+  public void repository_getByID() {
+    /* preconditions */
+    
+    /* test */
+    var methodModel = getMethodModel(RepositoryWithAssertions.class, "getByID", Long.class);
+    
+    /* assertions */
+    assertValue("getByID", methodModel.getName());
+    assertValue("VAR_declaredByTypeName", methodModel.getDeclaredByTypeName());
+    assertValue("PUBLIC", methodModel.getAccessLevel());
+    assertValue("()", methodModel.getParametersMethodReference());
+    assertValue("java.util.Optional<EntityWithAssertions>", methodModel.getReturnType().getTypeName());
+    assertValue("false", methodModel.getReturnType().isOptional());
+    assertValue("false", methodModel.getReturnType().getDomainType());
+    assertValue("java.lang.Long", methodModel.getParam0TypeName());
+    assertValue("NON_DOMAIN", methodModel.getParam0DomainType());
+    assertValue("NON_DOMAIN", methodModel.getParam1DomainType());
+    assertValue("VAR_publishedEventTypeNames", methodModel.getPublishedEventTypeNames());
+    assertValue("VAR_listenedEventTypeName", methodModel.getListenedEventTypeName());
+    assertValue("false", methodModel.isParam0Optional());
+    assertValue("false", methodModel.isParam0Nullable());
+    assertValue("false", methodModel.isParam1Optional());
+    assertValue("false", methodModel.isParam1Nullable());
+    assertValue("false", methodModel.isParam2Optional());
+    assertValue("false", methodModel.isParam2Nullable());
+    assertValue("false", methodModel.isParam3Optional());
+    assertValue("false", methodModel.isParam3Nullable());
+    assertValue("false", methodModel.isParam4Optional());
+    assertValue("false", methodModel.isParam4Nullable());
+    assertValue("false", methodModel.isParam5Optional());
+    assertValue("false", methodModel.isParam5Nullable());
+    assertValue("false", methodModel.isParam6Optional());
+    assertValue("false", methodModel.isParam6Nullable());
+    assertValue("false", methodModel.isParam7Optional());
+    assertValue("false", methodModel.isParam7Nullable());
+    assertValue("false", methodModel.isParam8Optional());
+    assertValue("false", methodModel.isParam8Nullable());
+    assertValue("false", methodModel.isParam9Optional());
+    assertValue("false", methodModel.isParam9Nullable());
+    assertValue("false", methodModel.isVarArgs());
+    assertValue("false", methodModel.getReturnType().hasOptionalContainer());
+    assertValue("false", methodModel.getReturnType().hasCollectionContainer());
+    assertValue("false", methodModel.getReturnType().hasListContainer());
+    assertValue("false", methodModel.getReturnType().hasSetContainer());
+    assertValue("false", methodModel.getReturnType().hasStreamContainer());
+    assertValue("null", methodModel.getReturnType().getContainerTypeName());
+    assertValue("false", methodModel.getReturnType().getContainerAssertions().isEmpty());
+    assertValue("false", methodModel.isGetter());
+    assertValue("false", methodModel.isSetter());
+    assertValue("VAR_publishedEventTypeNames", methodModel.getPublishedEventTypeNames());
+    assertValue("VAR_listenedEventTypeName", methodModel.getListenedEventTypeName());
+    assertValue("VAR_inheritanceHierarchyTypeNames", methodModel.getInheritanceHierarchyTypeNames());
+    assertValue("VAR_allInterfaceTypeNames", methodModel.getAllInterfaceTypeNames());
+    
+    /* test */
+    var methodModel2 = getMethodModel(RepositoryWithAssertions.class, "getByID", Long.class, "VAR_param1Name");
+    
+    /* assertions */
+    assertValue("getByID", methodModel2.getName());
+    assertValue("VAR_declaredByTypeName", methodModel2.getDeclaredByTypeName());
+    assertValue("PUBLIC", methodModel2.getAccessLevel());
+    assertValue("(java.lang.Long, java.lang.String)lue("false", methodModel.isParam1Nullable());
+    assertValue("false", methodModel.isParam2Optional());
+    assertValue("false", methodModel.isParam2Nullable());
+    assertValue("false", methodModel.isParam3Optional());
+    assertValue("false", methodModel.isParam3Nullable());
+    assertValue("false", methodModel.isParam4Optional());
+    assertValue("false", methodModel.isParam4Nullable());
+    assertValue("false", methodModel.isParam5Optional());
+    assertValue("false", methodModel.isParam5Nullable());
+    assertValue("false", methodModel.isParam6Optional());
+    assertValue("false", methodModel.isParam6Nullable());
+    assertValue("false", methodModel.isParam7Optional());
+    assertValue("false", methodModel.isParam7Nullable());
+    assertValue("false", methodModel.isParam8Optional());
+    assertValue("false", methodModel.isParam8Nullable());
+    assertValue("false", methodModel.isParam9Optional());
+    assertValue("false", methodModel.isParam9Nullable());
+    assertValue("false", methodModel.isVarArgs());
+    assertValue("false", methodModel.getReturnType().hasOptionalContainer());
+    assertValue("false", methodModel.getReturnType().hasCollectionContainer());
+    assertValue("false", methodModel.getReturnType().hasListContainer());
+    assertValue("false", methodModel.getReturnType().hasSetContainer());
+    assertValue("false", methodModel.getReturnType().hasStreamContainer());
+    assertValue("null", methodModel.getReturnType().getContainerTypeName());
+    assertValue("false", methodModel.getReturnType().getContainerAssertions().isEmpty());
+    assertValue("false", methodModel.isGetter());
+    assertValue("false", methodModel.isSetter());
+    assertValue("VAR_publishedEventTypeNames", methodModel.getPublishedEventTypeNames());
+    assertValue("VAR_listenedEventTypeName", methodModel.getListenedEventTypeName());
+    assertValue("VAR_inheritanceHierarchyTypeNames", methodModel.getInheritanceHierarchyTypeNames());
+    assertValue("VAR_allInterfaceTypeNames", methodModel.getAllInterfaceTypeNames());
+    
+    /* test */
+    var methodModel2 = getMethodModel(RepositoryWithAssertions.class, "getByID", Long.class, "VAR_param1Name", "VAR_param2Name");
+    
+    /* assertions */
+    assertValue("getByID", methodModel2.getName());
+    assertValue("VAR_declaredByTypeName", methodModel2.getDeclaredByTypeName());
+    assertValue("PUBLIC", methodModel2.getAccessLevel());
+    assertValue("(java.lang.Long, java.lang.String, java.lang.String)", methodModel2.getParametersMethodReference());
+    assertValue("java.util.Optional<EntityWithAssertions>", methodModel2.getReturnType().getTypeName());
+    assertValue("false", methodModel2.getReturnType().isOptional());
+    assertValue("false", methodModel2.getReturnType().getDomainType());
+    assertValue("java.lang.Long", methodModel2.getParam0TypeName());
+    assertValue("NON_DOMAIN", methodModel2.getParam0DomainType());
+    assertValue("java.lang.String", methodModel2.getParam1TypeName());
+    assertValue("NON_DOMAIN", methodModel2.getParam1DomainType());
+    assertValue("java.lang.String", methodModel2.getParam2TypeName());
+    assertValue("NON_DOMAIN", methodModel2.getParam2DomainType());
+    assertValue("VAR_publishedEventTypeNames", methodModel2.getPublishedEventTypeNames());
+    assertValue("VAR_listenedEventTypeName", methodModel2.getListenedEventTypeName());
+    assertValue("false", methodModel2.isParam0Optional());
+    assertValue

@@ -1,0 +1,114 @@
+ {  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []}}],  "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel",  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []},  "publishedEventTypeNames": "VAR_publishedEventTypeNames",  "listenedEventTypeName": null,  "getter": false,  "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel",  "name": "VAR_name",  "declaredByTypeName": "VAR_declaredByTypeName",  "accessLevel": "PUBLIC",  "parameters": [],  "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel",  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []},  "publishedEventTypeNames": "VAR_publishedEventTypeNames",  "listenedEventTypeName": null,  "getter": false,  "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel",  "name": "VAR_name",  "declaredByTypeName": "VAR_declaredByTypeName",  "accessLevel": "PUBLIC",  "parameters": [],  "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel",  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []},  "publishedEventTypeNames": "VAR_publishedEventTypeNames",  "listenedEventTypeName": null,  "getter": false,  "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel",  "name": "VAR_name",  "declaredByTypeName": "VAR_declaredByTypeName",  "accessLevel": "PUBLIC",  "parameters": [],  "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel",  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []},  "publishedEventTypeNames": "VAR_publishedEventTypeNames",  "listenedEventTypeName": null,  "getter": false,  "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel",  "name": "VAR_name",  "declaredByTypeName": "VAR_declaredByTypeName",  "accessLevel": "PUBLIC",  "parameters": [],  "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel",  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []},  "publishedEventTypeNames": "VAR_publishedEventTypeNames",  "listenedEventTypeName": null,  "getter": false,  "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel",  "name": "VAR_name",  "declaredByTypeName": "VAR_declaredByTypeName",  "accessLevel": "PUBLIC",  "parameters": [],  "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel",  "typeName": "VAR_typeName",  "domainType": "NON_DOMAIN",  "assertions": [],  "hasOptionalContainer": false,  "hasCollectionContainer": false,  "hasListContainer": false,  "hasSetContainer": false,  "hasStreamContainer": false,  "containerTypeName": "VAR_containerTypeName",  "containerAssertions": []},  "publishedEventTypeNames": "VAR_publishedEventTypeNames",  "listenedEventTypeName": null,  "getter": false,  "setter": false}], "inheritanceHierarchyTypeNames": "VAR_inheritanceHierarchyTypeNames", "allInterfaceTypeNames": "VAR_allInterfaceTypeNames"}<END>
+   */
+  @Test
+  public void repository_mirror() {
+    Assertions.assertThatType(repositoryRepository).isNotNull();
+    Assertions.assertThat(repositoryRepository.getAccessLevel()).isEqualTo(AccessLevel.PUBLIC);
+    Assertions.assertThat(repositoryRepository.getDeclaringType()).isNotNull();
+    Assertions.assertThat(repositoryRepository.getDeclaringType().getTypeName()).isEqualTo("VAR_declaringType");
+    Assertions.assertThat(repositoryRepository.getParameterTypes()).isEmpty();
+    Assertions.assertThat(repositoryRepository.getReturnType()).isNotNull();
+    Assertions.assertThat(repositoryRepository.getReturnType().getTypeName()).isEqualTo("VAR_returnType");
+    Assertions.assertThat(repositoryRepository.getPublictions.assertThat(repositoryRepository.getGetter()).isFalse();
+    Assertions.assertThat(repositoryRepository.getSetter()).isFalse();
+    Assertions.assertThat(repositoryRepository.getMethods()).isNotEmpty();
+    Assertions.assertThat(repositoryRepository.getInheritanceHierarchyTypeNames()).isEqualTo("VAR_inheritanceHierarchyTypeNames");
+    Assertions.assertThat(repositoryRepository.getAllInterfaceTypeNames()).isEqualTo("VAR_allInterfaceTypeNames");
+  }
+
+  @Test
+  public void repository_getRepositoryTypeName() {
+    Assertions.assertThat(repositoryRepository.getRepositoryTypeName()).isEqualTo("VAR_repositoryTypeName");
+  }
+
+  @Test
+  public void repository_getDomainTypeName() {
+    Assertions.assertThat(repositoryRepository.getDomainTypeName()).isEqualTo("VAR_domainTypeName");
+  }
+
+  @Test
+  public void repository_getEntityReferenceTypeName() {
+    Assertions.assertThat(repositoryRepository.getEntityReferenceTypeName()).isEqualTo("VAR_entityReferenceTypeName");
+  }
+
+  @Test
+  public void repository_getInheritanceHierarchyTypeNames() {
+    Assertions.assertThat(repositoryRepository.getInheritanceHierarchyTypeNames()).isEqualTo("VAR_inheritanceHierarchyTypeNames");
+  }
+
+  @Test
+  public void repository_getAllInterfaceTypeNames() {
+    Assertions.assertThat(repositoryRepository.getAllInterfaceTypeNames()).isEqualTo("VAR_allInterfaceTypeNames");
+  }
+
+  @Test
+  public void repository_getSingledValuedReferenceMethodModel() {
+    MethodModel singledValuedReferenceMethodModel = repositoryRepository.getMethodModelByName("VAR_methodName");
+    Assertions.assertThat(singledValuedReferenceMethodModel).isNotNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getAccessLevel()).isEqualTo(AccessLevel.PUBLIC);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getDeclaringType()).isNotNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getDeclaringType().getTypeName()).isEqualTo("VAR_declaringType");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).hasSize(1);
+    ParametersParamModel parametersParamModel = singledValuedReferenceMethodModel.getParameters()[0];
+    Assertions.assertThat(parametersParamModel.getParamName()).isEqualTo("VAR_paramName");
+    Assertions.assertThat(parametersParamModel.getParamType()).isNotNull();
+    Assertions.assertThat(parametersParamModel.getParamType().getTypeName()).isEqualTo("VAR_paramType");
+    Assertions.assertThat(parametersParamModel.getParamType().getAssertions()).isEqualTo("VAR_paramTypeAssertions");
+    Assertions.assertThat(parametersParamModel.getParamType().getHasOptionalContainer()).isFalse();
+    Assertions.assertThat(parametersParamModel.getParamType().getHasCollectionContainer").isFalse();
+    Assertions.assertThat(parametersParamModel.getParamType().getHasListContainer").isFalse();
+    Assertions.assertThat(parametersParamModel.getParamType().getHasSetContainer").isFalse();
+    Assertions.assertThat(parametersParamModel.getParamType().getHasStreamContainer").isFalse();
+    Assertions.assertThat(parametersParamModel.getParamType().getContainerTypeName").isNull();
+    Assertions.assertThat(parametersParamModel.getParamType().getContainerAssertions").isNull();
+    Assertions.assertThat(parametersParamModel.getParamType().getNonContainerTypeName").isEqualTo("VAR_nonContainerTypeName");
+    Assertions.assertThat(parametersParamModel.getParamType().getDomainType").isEqualTo("NON_DOMAIN");
+    Assertions.assertThat(parametersParamModel.getParamType().getAssertions()).isEqualTo("VAR_paramTypeAssertions");
+    Assertions.assertThat(parametersParamModel.getParamMode()).isEqualTo(ParamMode.VALUE);
+    Assertions.assertThat(parametersParamModel.getCommonContainerTypeName").isNull();
+    Assertions.assertThat(parametersParamModel.getCommonContainerAssertions").isNull();
+    Assertions.assertThat(parametersParamModel.getCommonParamRepository").isNull();
+    Assertions.assertThat(parametersParamModel.getCommonRepository").isNull();
+    Assertions.assertThat(parametersParamModel.getInheritanceHierarchyTypeNames")
+        .isEqualTo("VAR_inheritanceHierarchyTypeNames");
+    Assertions.assertThat(parametersParamModel.getAllInterfaceTypeNames")
+        .isEqualTo("VAR_allInterfaceTypeNames");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType()).isNotNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getTypeName()).isEqualTo("VAR_returnType");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getAssertions()).isEqualTo("VAR_returnTypeAssertions");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getHasOptionalContainer()).isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getHasCollectionContainer").isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getHasListContainer").isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getHasSetContainer").isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getHasStreamContainer").isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getContainerTypeName").isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getContainerAssertions").isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getNonContainerTypeName").isEqualTo("VAR_nonContainerTypeName");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getDomainType").isEqualTo("NON_DOMAIN");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType().getAssertions()).isEqualTo("VAR_returnTypeAssertions");
+    Assertions.assertThat(singledValuedReferenceMethodModel.isGetter()).isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.isSetter()).isFalse();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getPublisherEventTypeNames").isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getListenedEventTypeName").isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getGetterMethodModel()).isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getSetterMethodModel()).isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getInheritanceHierarchy()).isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getAccessLevel()).isEqualTo(AccessLevel.PUBLIC);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getDeclaringType()).isNotNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getDeclaringType().getTypeName()).isEqualTo("VAR_declaringType");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getModifierFlags()).isEqualTo(0);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameterTypes()).hasSize(1);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).hasSize(1);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getReturnType()).isNotNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getThrowableTypes()).isNull();
+    Assertions.assertThat(singledValuedReferenceMethodModel.getMethodName()).isEqualTo("VAR_methodName");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamName).contains("VAR_paramName");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getTypeName).contains("VAR_paramType");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getAssertions).contains("VAR_paramTypeAssertions");
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getHasOptionalContainer).contains(Boolean.FALSE);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getHasCollectionContainer).contains(Boolean.FALSE);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getHasListContainer).contains(Boolean.FALSE);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getHasSetContainer).contains(Boolean.FALSE);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getHasStreamContainer).contains(Boolean.FALSE);
+    Assertions.assertThat(singledValuedReferenceMethodModel.getParameters()).extracting(ParamModel::getParamType).extracting(AssertedContainableTypeModel::getContainerTypeName).contains("VAR_containerTypeName");
+    Assertions.assertThat

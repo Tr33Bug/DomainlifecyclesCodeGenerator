@@ -1,0 +1,118 @@
+ions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}, {"@class": "nitrox.dlc.mirror.model.MethodModel", "name": "VAR_name", "declaredByTypeName": "VAR_declaredByTypeName", "accessLevel": "PUBLIC", "parameters": [], "returnType": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "publishedEventTypeNames": "VAR_publishedEventTypeNames", "listenedEventTypeName": null, "getter": false, "setter": false}], "identityField": {"@class": "nitrox.dlc.mirror.model.ValueReferenceModel", "name": "VAR_name", "type": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "IDENTITY", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "accessLevel": "PRIVATE", "declaredByTypeName": "VAR_declaredByTypeName", "modifiable": false, "publicReadable": true, "publicWriteable": false, "static": false}, "concurrencyVersionField": {"@class": "nitrox.dlc.mirror.model.FieldModel", "name": "VAR_name", "type": {"@class": "nitrox.dlc.mirror.model.AssertedContainableTypeModel", "typeName": "VAR_typeName", "domainType": "NON_DOMAIN", "assertions": [], "hasOptionalContainer": false, "hasCollectionContainer": false, "hasListContainer": false, "hasSetContainer": false, "hasStreamContainer": false, "containerTypeName": "VAR_containerTypeName", "containerAssertions": []}, "accessLevel": "PACKAGE", "declaredByTypeName": "VAR_declaredByTypeName", "modifiable": true, "publicReadable": true, "publicWriteable": false, "static": false}, "inheritanceHierarchyTypeNames": "VAR_inheritanceHierarchyTypeNames", "allInterfaceTypeNames": "VAR_allInterfaceTypeNames"}<END>
+   */
+  @Test
+  public void repository_mirror() {
+    /* preconditions */
+    
+    /* test */
+    var repositoryMirror = getRepositoryMirror(RepositoryWithAssertions.class);
+    
+    /* assertions */
+    assertValue("RepositoryWithAssertions", repositoryMirror.getTypeName());
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", repositoryMirror.getAssertedContainableType().getClass().getName());
+    assertValue("VAR_assertions", repositoryMirror.getAssertions());
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", repositoryMirror.getReturnedAssertedContainableType().getClass().getName());
+    assertValue("VAR_assertions", repositoryMirror.getReturnedAssertedContainableType().getAssertions());
+    assertValue("false", String.valueOf(repositoryMirror.isGetter()));
+    assertValue("false", String.valueOf(repositoryMirror.isSetter()));
+    assertValue("VAR_publishedEventTypeNames", repositoryMirror.getPublishedEventTypeNames());
+    assertValue("VAR_listenedEventTypeName", repositoryMirror.getListenedEventTypeName());
+    assertValue("VAR_declaredByTypeName", repositoryMirror.getDeclaredByTypeName());
+    assertValue("VAR_accessLevel", repositoryMirror.getAccessLevel());
+    assertValue("VAR_modifiable", String.valueOf(repositoryMirror.isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(repositoryMirror.isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(repositoryMirror.isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(repositoryMirror.isStatic()));
+    assertValue("VAR_inheritanceHierarchyTypeNames", repositoryMirror.getInheritanceHierarchyTypeNames());
+    assertValue("VAR_allInterfaceTypeNames", repositoryMirror.getAllInterfaceTypeNames());
+  }
+  
+  @Test
+  public void value_entity_mirror() {
+    /* preconditions */
+    
+    /* test */
+    var valueEntityMirror = getValueEntityMirror(ValueEntityWithAssertions.class);
+    
+    /* assertions */
+    assertValue("ValueEntityWithAssertions", valueEntityMirror.getTypeName());
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", valueEntityMirror.getAssertedContainableType().getClass().getName());
+    assertValue("VAR_assertions", valueEntityMirror.getAssertions());
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", valueEntityMirror.getIdentityField().getAssertedContainableType().getClass().getName());
+    assertValue("VAR_name", valueEntityMirror.getIdentityField().getName());
+    assertValue("VAR_typeName", valueEntityMirror.getIdentityField().getTypeName());
+    assertValue("VAR_accessLevel", valueEntityMirror.getIdentityField().getAccessLevel());
+    assertValue("VAR_declaredByTypeName", valueEntityMirror.getIdentityField().getDeclaredByTypeName());
+    assertValue("VAR_modifiable", String.valueOf(valueEntityMirror.getIdentityField().isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueEntityMirror.getIdentityField().isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(valueEntityMirror.getIdentityField().isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(valueEntityMirror.getIdentityField().isStatic()));
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", valueEntityMirror.getAssertedContainableType().getClass().getName());
+    assertValue("VAR_assertions", valueEntityMirror.getAssertions());
+    assertValue("VAR_publishedEventTypeNames", valueEntityMirror.getPublishedEventTypeNames());
+    assertValue("VAR_listenedEventTypeName", valueEntityMirror.getListenedEventTypeName());
+    assertValue("VAR_declaredByTypeName", valueEntityMirror.getDeclaredByTypeName());
+    assertValue("VAR_accessLevel", valueEntityMirror.getAccessLevel());
+    assertValue("VAR_modifiable", String.valueOf(valueEntityMirror.isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueEntityMirror.isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(valueEntityMirror.isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(valueEntityMirror.isStatic()));
+    assertValue("VAR_inheritanceHierarchyTypeNames", valueEntityMirror.getInheritanceHierarchyTypeNames());
+    assertValue("VAR_allInterfaceTypeNames", valueEntityMirror.getAllInterfaceTypeNames());
+  }
+  
+  @Test
+  public void value_object_mirror() {
+    /* preconditions */
+    
+    /* test */
+    var valueObjectMirror = getValueObjectMirror(ValueObjectWithAssertions.class);
+    
+    /* assertions */
+    assertValue("ValueObjectWithAssertions", valueObjectMirror.getTypeName());
+    assertValue("nitrox.dlc.mirror.model.AssertedContainableTypeModel", valueObjectMirror.getAssertedContainableType().getClass().getName());
+    assertValue("VAR_assertions", valueObjectMirror.getAssertions());
+    assertValue("nitrox.dlc.mirror.model.FieldModel", valueObjectMirror.getFields().get(0).getClass().getName());
+    assertValue("VAR_name", valueObjectMirror.getFields().get(0).getName());
+    assertValue("VAR_typeName", valueObjectMirror.getFields().get(0).getTypeName());
+    assertValue("VAR_accessLevel", valueObjectMirror.getFields().get(0).getAccessLevel());
+    assertValue("VAR_declaredByTypeName", valueObjectMirror.getFields().get(0).getDeclaredByTypeName());
+    assertValue("VAR_modifiable", String.valueOf(valueObjectMirror.getFields().get(0).isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueObjectMirror.getFields().get(0).isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(valueObjectMirror.getFields().get(0).isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(valueObjectMirror.getFields().get(0).isStatic()));
+    assertValue("nitrox.dlc.mirror.model.FieldModel", valueObjectMirror.getFields().get(1).getClass().getName());
+    assertValue("VAR_name", valueObjectMirror.getFields().get(1).getName());
+    assertValue("VAR_typeName", valueObjectMirror.getFields().get(1).getTypeName());
+    assertValue("VAR_accessLevel", valueObjectMirror.getFields().get(1).getAccessLevel());
+    assertValue("VAR_declaredByTypeName", valueObjectMirror.getFields().get(1).getDeclaredByTypeName());
+    assertValue("VAR_modifiable", String.valueOf(valueObjectMirror.getFields().get(1).isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueObjectMirror.getFields().get(1).isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(valueObjectMirror.getFields().get(1).isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(valueObjectMirror.getFields().get(1).isStatic()));
+    assertValue("nitrox.dlc.mirror.model.FieldModel", valueObjectMirror.getFields().get(2).getClass().getName());
+    assertValue("VAR_name", valueObjectMirror.getFields().get(2).getName());
+    assertValue("VAR_typeName", valueObjectMirror.getFields().get(2).getTypeName());
+    assertValue("VAR_accessLevel", valueObjectMirror.getFields().get(2).getAccessLevel());
+    assertValue("VAR_declaredByTypeName", valueObjectMirror.getFields().get(2).getDeclaredByTypeName());
+    assertValue("VAR_modifiable", String.valueOf(valueObjectMirror.getFields().get(2).isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueObjectMirror.getFields().get(2).isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(valueObjectMirror.getFields().get(2).isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(valueObjectMirror.getFields().get(2).isStatic()));
+    assertValue("nitrox.dlc.mirror.model.FieldModel", valueObjectMirror.getFields().get(3).getClass().getName());
+    assertValue("VAR_name", valueObjectMirror.getFields().get(3).getName());
+    assertValue("VAR_typeName", valueObjectMirror.getFields().get(3).getTypeName());
+    assertValue("VAR_accessLevel", valueObjectMirror.getFields().get(3).getAccessLevel());
+    assertValue("VAR_declaredByTypeName", valueObjectMirror.getFields().get(3).getDeclaredByTypeName());
+    assertValue("VAR_modifiable", String.valueOf(valueObjectMirror.getFields().get(3).isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueObjectMirror.getFields().get(3).isPublicReadable()));
+    assertValue("VAR_publicWriteable", String.valueOf(valueObjectMirror.getFields().get(3).isPublicWriteable()));
+    assertValue("VAR_static", String.valueOf(valueObjectMirror.getFields().get(3).isStatic()));
+    assertValue("nitrox.dlc.mirror.model.FieldModel", valueObjectMirror.getFields().get(4).getClass().getName());
+    assertValue("VAR_name", valueObjectMirror.getFields().get(4).getName());
+    assertValue("VAR_typeName", valueObjectMirror.getFields().get(4).getTypeName());
+    assertValue("VAR_accessLevel", valueObjectMirror.getFields().get(4).getAccessLevel());
+    assertValue("VAR_declaredByTypeName", valueObjectMirror.getFields().get(4).getDeclaredByTypeName());
+    assertValue("VAR_modifiable", String.valueOf(valueObjectMirror.getFields().get(4).isModifiable()));
+    assertValue("VAR_publicReadable", String.valueOf(valueObjectMirror.getFields().get(4).isPublicReadable()));
+    assertValue("VAR
