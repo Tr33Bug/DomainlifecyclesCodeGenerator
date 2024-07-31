@@ -118,12 +118,12 @@ The setup and procedure is explained in this section using the example of the 1_
      huggingface-cli login
      # after this you should be promptet to past a Access Token. Generate the Access Token with the required rights through the Hugging Face website and your user account. 
     ```
-    > [NOTE] 
+    > [!NOTE] 
     > For more informations on the huggingface-cli see the Documentation: [Command Line Interface (CLI)](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
 
 2. Gain access to the model repository if required. To do this, log in to the Hugging Face Hub, go to the model repository and agree to the corresponding Terms of Services or similar. 
 
-> [NOTE] 
+> [!NOTE] 
 > The base model used for this project can be found here: [codellama/CodeLlama-7b-hf](https://huggingface.co/codellama/CodeLlama-7b-hf)
 
 
