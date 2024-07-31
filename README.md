@@ -1,7 +1,7 @@
 # DomainlifecyclesCodeGenerator
 The *Domainlifecycles Code Generator (DCG)* formerly *NitroX Code Generator (NCG)* is the first version of a Generative AI Assistance System which was developed for esentri's Domain Lifecycles Framework for the Domain-Driven Design (DDD) Development process.
 
-This first version of the DCG is able to create syntactically correct Domainlifecycles JSON objects as part of the Domainlifecycles DSL. More information about the DCG and its creation as well as limitations and future work can be found in the [Master Thesis PDF](Master-Thesis_Götz-Henrik_Wiegand_2024.pdf). 
+This first version of the DCG is able to create syntactically correct Domainlifecycles JSON objects as part of the Domainlifecycles DSL. More information about the DCG and its creation, as well as limitations and future work, can be found in the [Master Thesis PDF](Master-Thesis_Götz-Henrik_Wiegand_2024.pdf). 
 
 The DCG was developed in collaboration with [esentri](https://esentri.com/) as part of my Master's thesis at the [Karlsruhe University of Applied Sciences](https://www.h-ka.de/). 
 
@@ -48,8 +48,6 @@ DomainlifecyclesCodeGenerator
     - The customer-related project data from the "esentri-Partner" was removed from the data set. That was 80% of the files and so the data set is only stored here as an example.
 - **datasets:**
     - Empty folder reserved for export and storage of the generated and cleaned dataset.
-- **images:**
-    - Folder for diagrams and graphics for project documentation.
 - **models:**
     - Reserved path for the model export with the `finalTraining_v1` model as the result of the final training for the DCG. 
 - **runs:**
@@ -59,7 +57,7 @@ DomainlifecyclesCodeGenerator
 ## System Requirements ###
 
 > [!IMPORTANT] 
-> The entire project was developed on a Linux 64-bit system with an NVIDIA graphics card. The setup and the readme have therefore only been tested for these specifications: 
+> The entire project was developed on a Linux 64-bit system with an NVIDIA graphics card. The setup and the README have therefore only been tested for these specifications: 
 > - Ubuntu 22.04.4 LTS
 > - GeForce RTX 2080 Ti (11GB VRAM)
 
@@ -99,15 +97,15 @@ The setup and procedure is explained in this section using the example of the 1_
 
 1. Start session and setup:
     - Start ssh session or start a terminal to run the notebook on the local computer.
-    - Naviagte to the project folder or clone the repository to a desired location.
+    - Navigate to the project folder or clone the repository to a desired location.
     - Export the corresponding notebooks to be executed as python script. 
-2. Set `run_name` in `1_datasetGenerator.py` und `2_trainingLoop.py` to a desired name (musst be the same in both) 
+2. Set `run_name` in `1_datasetGenerator.py` and `2_trainingLoop.py` to a desired name (must be the same in both) 
 3. run bash commands:
     ```bash
     # start tmux session
     tmux
 
-    # run the scipts and pipe the output to a log.txt file.
+    # run the scripts and pipe the output to a log.txt file.
     python 1_datasetGenerator.py > log.txt
     python 2_trainingLoop.py > log.txt
     ```
@@ -122,7 +120,7 @@ The setup and procedure is explained in this section using the example of the 1_
     ```
 - Open Session with: `tmux attach-session -t NUMBER`
     ```bash
-    # to resume the example session 1 created on Wed Apr 3, attatch session 1:
+    # to resume the example session 1 created on Wed Apr 3, attach session 1:
     tmux attach-session -t 1
     ```
 
@@ -145,13 +143,13 @@ More information about the dashboard and getting started can be found here: http
     optuna-dashboard sqlite:///optuna/A6000_OptunaRun_2048.db
     ```
 > [!NOTE]
-> The database path for the file ist optuna/A6000_OptunaRun_2048. If you want to analyze your own results, change the command to your own path: 
+> The database path for the file is optuna/A6000_OptunaRun_2048. If you want to analyze your own results, change the command to your own path: 
 > `optuna-dashboard sqlite:///{YOUR PATH}`
-3. Open the dashboard in your browser using the provided infromation from the optuna-dashboard command (For example: `Listening at: http://127.0.0.1:8080`). 
+3. Open the dashboard in your browser using the provided information from the optuna-dashboard command (For example: `Listening at: http://127.0.0.1:8080`). 
 
 
 ### Log in to Huggingface Hub
-1. Test if huggingface-cli ist installed and if already logged in.
+1. Test if huggingface-cli is installed and if already logged in.
     ```bash
     huggingface-cli whoami
     ```
@@ -163,12 +161,12 @@ More information about the dashboard and getting started can be found here: http
     ```bash
     huggingface-cli login
     ```
-    After this you should be promptet to past a Access Token. Generate the Access Token with the required rights through the Hugging Face website and your user account.
+    After this you should be prompted to past an Access Token. Generate the Access Token with the required rights through the Hugging Face website and your user account.
 3. Gain access to the model repository if required. To do this, log in to the Hugging Face Hub, go to the model repository and agree to the corresponding Terms of Services or similar. 
 
 
 > [!NOTE] 
-> For more informations on the huggingface-cli see the Documentation: [Command Line Interface (CLI)](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
+> For more information on the huggingface-cli see the documentation: [Command Line Interface (CLI)](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
 
 ## Contributing
 This project is not being actively developed further, for questions or suggestions please open an issue.
