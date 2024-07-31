@@ -52,7 +52,16 @@ DomainlifecyclesCodeGenerator
     - Reserved tensorboard callback folder for the training history logs. The results from the final training of the DCG are stored here. 
     - The metrics and progressions logged there can be displayed and analyzed with a tensorboard.
 
+## System Requirements ###
+
+> [!IMPORTANT] 
+> The entire project was developed on a Linux 64-bit system with an NVIDIA graphics card. The setup and the readme have therefore only been tested for these specifications: 
+> - Ubuntu 22.04.4 LTS
+> - GeForce RTX 2080 Ti 
+
+
 ## Installation and Setup
+
 1. **Clone the Repository**  
 
    Clone the repository:
