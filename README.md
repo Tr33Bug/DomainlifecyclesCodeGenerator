@@ -32,8 +32,13 @@ DomainlifecyclesCodeGenerator
 │   │   └── events.out.tfevents.1716412415.deep-learning.1381720.0
 ├── .gitignore
 ├── 1_datasetGenerator.ipynb
+├── 2_trainingLoop.ipynb
+├── 3_hyperparameterTrainer.ipynb
+├── 4_optunaEvaluation.ipynb
+├── 5_finalTraining.ipynb
 ├── ColoredDataPreprocessingProcess.jpg
-├── DCG_Server.py
+├── LICENSE
+├── Master-Thesis_Götz-Henrik_Wiegand_2024.pdf
 └── README.md
 ```
 
