@@ -21,6 +21,14 @@ DomainlifecyclesCodeGenerator
 │   ...
 │   └── tests.shared.validation.javax.ValidatedValueObject.json
 ├── datasets
+├── gen_json
+│   │   ├── completed
+│   │   │   ├── 0.json
+│   │   │   ...
+│   │   │   └── 99.json
+│   ├── 1_0_Part1_NitroXObjects_EntityModel.json
+│   ...
+│   └── 2_49_part2_riskyPrompt.json
 ├── models
 │   └── finalTraining_v1
 │   │   ├── adapter_config.json
@@ -49,6 +57,8 @@ DomainlifecyclesCodeGenerator
     - The customer-related project data from the "esentri-Partner" was removed from the data set. That was 80% of the files and so the data set is only stored here as an example.
 - **datasets:**
     - Empty folder reserved for export and storage of the generated and cleaned dataset.
+- **gen_json:**
+    - Folder with the generated samples for the Model Assessment phase.
 - **models:**
     - Reserved path for the model export with the `finalTraining_v1` model as the result of the final training for the DCG. 
 - **runs:**
