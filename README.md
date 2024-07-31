@@ -15,31 +15,9 @@ Outsourced from this repository is the [DCG-DemoApp](https://github.com/Tr33Bug/
 ## Overview
 
 ```bash
-DomainlifecyclesCodeGenerator
-├── all_json
-│   ├── nitrox.dlc.domain.types.base.AggregateRootBase.json
-│   ...
-│   └── tests.shared.validation.javax.ValidatedValueObject.json
-├── datasets
-├── gen_json
-│   │   ├── completed
-│   │   │   ├── 0.json
-│   │   │   ...
-│   │   │   └── 99.json
-│   ├── 1_0_Part1_NitroXObjects_EntityModel.json
-│   ...
-│   ├── 2_49_part2_riskyPrompt.json
-│   ├── parsibility_results.csv
-│   └── parsibility_results.txt
-├── models
-│   └── finalTraining_v1
-│   │   ├── adapter_config.json
-│   │   ├── adapter_model.safetensors
-│   │   ├── generation_config.json
-│   │   └── training_args.bin
-├── runs
-│   └── May22_23-13-35_deep-learning_FinalTraining_v1
-│   │   └── events.out.tfevents.1716412415.deep-learning.1381720.0
+DomainlifecyclesCodeGenerator/
+├── [FOLDER]
+...
 ├── .gitignore
 ├── 1_datasetGenerator.ipynb
 ├── 2_trainingLoop.ipynb
