@@ -83,6 +83,9 @@ DomainlifecyclesCodeGenerator
 3. **Run the Notebooks**
     Start with [1_datasetGenerator.ipynb](1_datasetGenerator.ipynb) and follow the instructions from the jupyter notebook.
 
+## Workflow and Engineering Documentation
+This section documents some of the project workflows and their setup. 
+
 ### Remote Training
 > [!NOTE] 
 > The entire project was engineered remotely via VS Code SSH access. In order to be able to close the notebook during longer training times, the notebooks were exported as a Python script and executed remotely with a tmux session. 
@@ -139,29 +142,24 @@ More information about the dashboard and getting started can be found here: http
 
 
 ### Log in to Huggingface Hub
-1. Install Huggingface CLI with if not alredy installed: 
+1. Test if huggingface-cli ist installed and if already logged in.
     ```bash
-     # test if huggingface-cli ist installed and if already logged in. 
-     huggingface-cli whoami
-     # if you dont have huggingface-cli installed or if you are not logged in, follow the following steps:
-     
-     # install the huggingface-cli (should be already installed through the environment.yml or the transformers library)
-     pip install -U "huggingface_hub[cli]"
-
-     # login to Hugging Face using the cli
-     huggingface-cli login
-     # after this you should be promptet to past a Access Token. Generate the Access Token with the required rights through the Hugging Face website and your user account. 
+    huggingface-cli whoami
     ```
-    > [!NOTE] 
-    > For more informations on the huggingface-cli see the Documentation: [Command Line Interface (CLI)](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
+2. Install huggingface-cli (Skip this, if already installed).
+    ```bash
+    pip install -U "huggingface_hub[cli]"
+    ```
+3. Login using the huggingface-cli (Skip this if you are already logged in).
+    ```bash
+    huggingface-cli login
+    ```
+    After this you should be promptet to past a Access Token. Generate the Access Token with the required rights through the Hugging Face website and your user account.
+3. Gain access to the model repository if required. To do this, log in to the Hugging Face Hub, go to the model repository and agree to the corresponding Terms of Services or similar. 
 
-2. Gain access to the model repository if required. To do this, log in to the Hugging Face Hub, go to the model repository and agree to the corresponding Terms of Services or similar. 
 
 > [!NOTE] 
-> The base model used for this project can be found here: [codellama/CodeLlama-7b-hf](https://huggingface.co/codellama/CodeLlama-7b-hf)
-
-
-
+> For more informations on the huggingface-cli see the Documentation: [Command Line Interface (CLI)](https://huggingface.co/docs/huggingface_hub/main/en/guides/cli)
 
 ## Contributing
 This project is not being actively developed further, for questions or suggestions please open an issue.
