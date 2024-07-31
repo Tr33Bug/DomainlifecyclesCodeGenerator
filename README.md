@@ -48,6 +48,7 @@ DomainlifecyclesCodeGenerator
 ├── 5_finalTraining.ipynb
 ├── ColoredDataPreprocessingProcess.jpg
 ├── environment.yml
+├── finalTraining_v1_tbExport.csv
 ├── LICENSE
 ├── Master-Thesis_Götz-Henrik_Wiegand_2024.pdf
 └── README.md
