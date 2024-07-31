@@ -81,6 +81,7 @@ DomainlifecyclesCodeGenerator
    conda activate DCGServerEnv
    ```
 3. **Run the Notebooks**
+
     Start with [1_datasetGenerator.ipynb](1_datasetGenerator.ipynb) and follow the instructions from the jupyter notebook.
 
 ## Workflow and Engineering Documentation
@@ -96,15 +97,15 @@ The setup and procedure is explained in this section using the example of the 1_
     - Start ssh session or start a terminal to run the notebook on the local computer.
     - Naviagte to the project folder or clone the repository to a desired location.
     - Export the corresponding notebooks to be executed as python script. 
-2. Set `run_name` in 1_dataset_generator.py und 2_trainer.py to a desired name (musst be the same in both) 
+2. Set `run_name` in `1_datasetGenerator.py` und `2_trainingLoop.py` to a desired name (musst be the same in both) 
 3. run bash commands:
     ```bash
     # start tmux session
     tmux
 
-    python 1_dataset_generator.py > log.txt
-
-    python 2_trainer.py > log.txt
+    # run the scipts and pipe the output to a log.txt file.
+    python 1_datasetGenerator.py > log.txt
+    python 2_trainingLoop.py > log.txt
     ```
 4. Ctrl+B, then D (to detach the tmux session)
 5. Open tensorboard with the ./runs folder
