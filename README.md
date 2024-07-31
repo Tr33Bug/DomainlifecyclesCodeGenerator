@@ -37,6 +37,7 @@ DomainlifecyclesCodeGenerator
 ├── 4_optunaEvaluation.ipynb
 ├── 5_finalTraining.ipynb
 ├── ColoredDataPreprocessingProcess.jpg
+├── environment.yml
 ├── LICENSE
 ├── Master-Thesis_Götz-Henrik_Wiegand_2024.pdf
 └── README.md
