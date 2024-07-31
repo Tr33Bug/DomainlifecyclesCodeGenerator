@@ -75,7 +75,8 @@ DomainlifecyclesCodeGenerator
     Start with [1_datasetGenerator.ipynb](1_datasetGenerator.ipynb) and follow the instructions from the jupyter notebook.
 
 ### Remote Training
-> [!NOTE] The entire project was engineered remotely via VS Code SSH access. In order to be able to close the notebook during longer training times, the notebooks were exported as a Python script and executed remotely with a tmux session. 
+> [!NOTE] 
+> The entire project was engineered remotely via VS Code SSH access. In order to be able to close the notebook during longer training times, the notebooks were exported as a Python script and executed remotely with a tmux session. 
 
 The setup and procedure is explained in this section using the example of the 1_datasetGenerator and the 2_trainingLoop notebook:
 
