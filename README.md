@@ -57,7 +57,7 @@ DomainlifecyclesCodeGenerator
 > [!IMPORTANT] 
 > The entire project was developed on a Linux 64-bit system with an NVIDIA graphics card. The setup and the readme have therefore only been tested for these specifications: 
 > - Ubuntu 22.04.4 LTS
-> - GeForce RTX 2080 Ti 
+> - GeForce RTX 2080 Ti (11GB VRAM)
 
 
 ## Installation and Setup
@@ -89,7 +89,10 @@ DomainlifecyclesCodeGenerator
 
 The setup and procedure is explained in this section using the example of the 1_datasetGenerator and the 2_trainingLoop notebook:
 
-1. Start ssh session
+1. Start session and setup:
+    - Start ssh session or start a terminal to run the notebook on the local computer.
+    - Naviagte to the project folder or clone the repository to a desired location.
+    - Export the corresponding notebooks to be executed as python script. 
 2. Set `run_name` in 1_dataset_generator.py und 2_trainer.py to a desired name (musst be the same in both) 
 3. run bash commands:
     ```bash
@@ -113,6 +116,27 @@ The setup and procedure is explained in this section using the example of the 1_
 
 
 ### Optuna Dashboard Setup
+In order to visualize the results of hyperparameter tuning, these can be made visible with the Optuna Dashboard. 
+More information about the dashboard and getting started can be found here: https://optuna-dashboard.readthedocs.io/en/latest/getting-started.html
+
+> [!NOTE]
+> The dashboard can also be installed and used without the `environment.yml` dependencies if only the results from the hyperparameter tuning of the thesis are to be analyzed. 
+
+1. Install the dashboard and the recommended dependencies to speed up the dashboard:
+    ```bash
+    pip install optuna-dashboard
+
+    pip install optuna-fast-fanova gunicorn
+    ```
+2. Open Optuna results in Dashboard:
+    ```bash
+    optuna-dashboard sqlite:///optuna/A6000_OptunaRun_2048.db
+    ```
+> [!NOTE]
+> The database path for the file ist optuna/A6000_OptunaRun_2048. If you want to analyze your own results, change the command to your own path: 
+> `optuna-dashboard sqlite:///{YOUR PATH}`
+3. Open the dashboard in your browser using the provided infromation from the optuna-dashboard command (For example: `Listening at: http://127.0.0.1:8080`). 
+
 
 ### Log in to Huggingface Hub
 1. Install Huggingface CLI with if not alredy installed: 
