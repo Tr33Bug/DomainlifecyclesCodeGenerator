@@ -117,6 +117,10 @@ The setup and procedure is explained in this section using the example of the 1_
     1: 1 windows (created Wed Apr  3 10:22:08 2024)
     ```
 - Open Session with: `tmux attach-session -t NUMBER`
+    ```bash
+    # to resume the example session 1 created on Wed Apr 3, attatch session 1:
+    tmux attach-session -t 1
+    ```
 
 
 ### Optuna Dashboard Setup
