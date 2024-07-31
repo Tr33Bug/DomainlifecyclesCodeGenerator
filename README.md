@@ -28,7 +28,9 @@ DomainlifecyclesCodeGenerator
 │   │   │   └── 99.json
 │   ├── 1_0_Part1_NitroXObjects_EntityModel.json
 │   ...
-│   └── 2_49_part2_riskyPrompt.json
+│   ├── 2_49_part2_riskyPrompt.json
+│   ├── parsibility_results.csv
+│   └── parsibility_results.txt
 ├── models
 │   └── finalTraining_v1
 │   │   ├── adapter_config.json
